@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Geologic', sans-serif;
+    
+}
+h1{
+    font-size: 3.5em;
+}
+h1 > span {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    color: #ff8800;
+    height: 1.25em;
+    vertical-align: bottom;
+}
+h1 > span > span {
+    display: block;
+    animation: animatewords 5s infinite ease;
+}
+@keyframes animatewords {
+    0% {transform: translateY(0%);}
+    25% {transform: translateY(-100%);}
+    50% {transform: translateY(-200%);}
+    75% { transform: translateY(-300%);}
+    100% {transform: translateY(-400px);}
+}
